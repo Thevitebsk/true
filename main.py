@@ -23,4 +23,5 @@ while 1:
                 if len(i)-2==p:p=0
                 p+=1
         elif i[p]==";"and sub==1:p=tp
+        elif i[p]=="\n":break
     except IndexError:break
