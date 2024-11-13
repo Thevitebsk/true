@@ -2,6 +2,9 @@ true (yes it's spelled in lowercase) is a FALSE-like language made by Gaham just
 # Commands
 | Command | Action |
 | --- | --- |
-| "..." | Pushes a string |
-| . | pops the top value on the stack and prints it
-|t
+| "..." | Pushes a string 
+| . | Pops the top value on the stack and prints it
+| 0-9 | Pushes a number to the stack
+# Examples
+Hello world
+```"Hello, world!".```
