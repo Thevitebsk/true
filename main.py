@@ -1,5 +1,4 @@
-i=""",»r
-r:'.»r""";p=-1;tp=0;targ=""
+i="""""";p=-1;tp=0;targ=""
 tp=0;num=[];c="";po=0;sub=0
 for tnum in range(10):num.append(str(tnum))
 ts=[];s=[]
