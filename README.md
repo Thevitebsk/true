@@ -7,6 +7,7 @@ true (yes it's spelled in lowercase) is a FALSE-like language made by Gaham just
 | 0-9 | Pushes a number to the stack
 | , | Gets input and gets set as input variable's value
 | : | Duplicates the top value on the stack
+| ' | Removes the first character in the input variable and push it to the stack
 # Examples
 Hello world
 
