@@ -14,4 +14,5 @@ while 1:
   elif c[p]=='.':print(s.pop())
   elif c[p]in num:s.append(int(c[p]))
   elif c[p]==',':s.append(input())
+  elif c[p]==':':ts.append(s.pop());ts.append(ts[0]);s.append(ts.pop());s.append(ts.pop())
  except IndexError:break
