@@ -7,4 +7,7 @@ true (yes it's spelled in lowercase) is a FALSE-like language made by Gaham just
 | 0-9 | Pushes a number to the stack
 # Examples
 Hello world
-```"Hello, world!".```
+
+```
+"Hello, world!".
+```
