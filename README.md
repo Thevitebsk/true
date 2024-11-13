@@ -4,3 +4,4 @@ true (yes it's spelled in lowercase) is a FALSE-like language made by Gaham just
 | --- | --- |
 | "..." | Pushes a string |
 | . | pops the top value on the stack and prints it
+|t
