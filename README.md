@@ -13,7 +13,10 @@ true (yes it's spelled in lowercase) is a FALSE-like language made by Gaham just
 | ; | Returns from the subroutine to the main line
 # Examples
 Hello world
-
 ```
 "Hello, world!".
+```
+Cat program
+```
+,»r r:'.»r
 ```
