@@ -25,5 +25,6 @@ while 1:
   elif i[p]==";"and sub==1:p=tp
   elif i[p]=="\n":break
   elif i[p]=="-":s.pop()
+  elif i[p]=="+":s.append(int(s.pop())+int(s.pop()))
   elif i[p]=="`":s.append(int(s.pop())*-1)
  except IndexError:break
