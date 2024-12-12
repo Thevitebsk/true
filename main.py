@@ -27,4 +27,5 @@ while 1:
   elif i[p]=="-":s.pop()
   elif i[p]=="+":s.append(int(s.pop())+int(s.pop()))
   elif i[p]=="`":s.append(int(s.pop())*-1)
+  if len(i)-1==p:p=-1
  except IndexError:break
