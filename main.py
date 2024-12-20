@@ -1,6 +1,5 @@
 i='''''';p=-1;tp=0;targ=""
-tp=0;num=[];c="";po=0;sub=0
-for tnum in range(10):num.append(str(tnum))
+tp=0;num=list(map(str,range(10)));c="";po=0;sub=0
 ts=[];s=[]
 print("true")
 while 1:
