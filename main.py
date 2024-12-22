@@ -14,7 +14,7 @@ while 1:
   elif i[p]in num:s.append(i[p]);s[len(s)-1]=int(s[len(s)-1])
   elif i[p]==',':c=input()
   elif i[p]==':':ts.append(s.pop());ts.append(ts[0]);s.append(ts.pop());s.append(ts.pop())
-  elif i[p]=="'":s.append(c[0]);c=c[1:len(c)]
+  elif i[p]=="'":s.append(c[0]);c=c[1:]
   elif i[p]=='»':
    targ=i[p+1];tp=p;sub=1
    while 1:
@@ -26,5 +26,8 @@ while 1:
   elif i[p]=="-":s.pop()
   elif i[p]=="+":s.append(int(s.pop())+int(s.pop()))
   elif i[p]=="`":s.append(int(s.pop())*-1)
-  if len(i)-1==p:p=-1
+  if len(i)-1==p:
+   while 1:
+    if i[p]=="\n":break
+    elif p==0:p=-1
  except IndexError:break
