@@ -1,6 +1,7 @@
-i='''''';p=-1;tp=0;targ=""
-tp=0;c="";po=0;sub=0
-ts=[];s=[]
+i=''''''
+p=-1;targ="";tp=0;c="";sub=0
+ts=[];s=[];ls={}
+codepage='"0123456789\'.,:-+`»;('
 print("true")
 while 1:
  try:
@@ -26,6 +27,12 @@ while 1:
   elif i[p]=="-":s.pop()
   elif i[p]=="+":s.append(int(s.pop())+int(s.pop()))
   elif i[p]=="`":s.append(int(s.pop())*-1)
+  elif i[p]=="(":
+   while i[p+1]!=")":ts.append(i[p+1]);p+=1
+   ts.reverse()
+   while len(ts)>1:ts.append(ts.pop()+ts.pop())
+   if i[p+3] not in codepage:ls[i[p+3]]=ts[-1];print(ls)
+   else:print("Cannot overwrite built-in");break
   if len(i)-1==p:
    while 1:
     if i[p]=="\n":break
