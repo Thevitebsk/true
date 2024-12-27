@@ -31,7 +31,7 @@ while 1:
    while i[p+1]!=")":ts.append(i[p+1]);p+=1
    ts.reverse()
    while len(ts)>1:ts.append(ts.pop()+ts.pop())
-   if i[p+3] not in codepage:ls[i[p+3]]=ts[-1];print(ls)
+   if i[p+3] not in codepage:ls[i[p+3]]=ts[-1]
    else:print("Cannot overwrite built-in");break
   if len(i)-1==p:
    while 1:
