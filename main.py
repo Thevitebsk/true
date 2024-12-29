@@ -11,7 +11,7 @@ while 1:
    while len(ts)>1:ts.append(ts.pop()+ts.pop())
    s.append(ts.pop())
   elif i[p]=='.':print(s.pop(),end="")
-  elif i[p]in list(map(str,range(10))):s.append(i[p]);s[len(s)-1]=int(s[len(s)-1])
+  elif i[p]in list(map(str,range(10))):s.append(int(i[p]))
   elif i[p]==',':c=input()
   elif i[p]==':':ts.append(s.pop());ts.append(ts[0]);s.append(ts.pop());s.append(ts.pop())
   elif i[p]=="'":s.append(c[0]);c=c[1:]
