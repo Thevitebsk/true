@@ -31,6 +31,8 @@ while 1:
    ts.reverse()
    while len(ts)>1:ts.append(ts.pop()+ts.pop())
    ld.append(ts.pop());p+=1
+  elif i[p]=="[":
+   while i[p]!="]":p+=1
   if len(i)-1==p:
    while 1:
     if i[p]=="\n":break
